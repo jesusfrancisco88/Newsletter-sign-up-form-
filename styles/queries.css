@@ -1,2 +1,9 @@
 
-@media(max-width: 500) {}
+/* 1088px / 16 = 68em  */
+@media(max-width: 68em) {
+  /* .image-content { 
+    background-image: url('/assets/images/illustration-sign-up-mobile.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+   } */
+}
