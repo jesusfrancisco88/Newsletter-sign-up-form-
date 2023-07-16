@@ -40,22 +40,15 @@ body {
   background-color: white;
   padding: 2rem;
   border-radius: 2rem;
-  width: 80%;
+  width: 95%;
   height: auto;
-}
 
-.grid {
-  display: grid;
-}
+  display: flex;
+  gap: 4rem;
+  
+  overflow: hidden;
 
-.grid-2-cols {
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
-}
-
-.grid-1-cols {
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem; 
+  box-shadow: 0px 2px 11px -1px rgba(0,0,0,0.5);
 }
 
 /*******************************/
@@ -74,18 +67,11 @@ body {
 }
 
 .description-text {
-  font-size: 1.8rem; 
+  font-size: 1.9rem; 
   margin-bottom: 3rem;
   line-height: 1.5;
 }
 
-.image-content {
-  background-image: url('/assets/images/illustration-sign-up-desktop.svg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  border-radius: 2rem;
-  /* order: 2; */
-}
 /*******************************/
 /*/////////////////////////// */
 /*****************************/
@@ -138,7 +124,7 @@ body {
 }
 
 .label-email {
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   font-family: 'Roboto-Bold';
 }
 
