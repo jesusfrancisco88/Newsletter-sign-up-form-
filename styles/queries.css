@@ -1,3 +1,23 @@
+/* 1200 / 16 = 75em */
+@media(max-width:75em) {
+  .suscribe {
+    width: 50%;
+  }
+}
+/* 710px / 16 = 44em*/
+@media(max-width: 44em){
+  .suscribe {
+    width: 60%;
+  }
+}
+
+/* 550px / 16 = 44em*/
+@media(max-width: 44em){
+  .suscribe {
+    width: 90%;
+  }
+}
+
 /* 995px / 16 = 62em */
 @media(max-width: 62em) {
   html {
