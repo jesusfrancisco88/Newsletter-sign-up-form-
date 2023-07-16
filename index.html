@@ -35,14 +35,28 @@
       <!-- monthly-newsletter -->
       <div class="monthly-newsletter"> 
         <div class="data"> 
+          <form id="emailForm"> 
       <label class="label-email" for="email">Email address</label>
-      <input class="input-email" type="email" placeholder="ash#loremcompany.com">
+      <input class="input-email" placeholder="ejemplo43@gmail.com" id='email' type="email" name="email" required>
     </div>
-      <button class="btn-submit">Suscribe to monthly newsletter</button>
+      <button class="btn-submit" type="submit">Suscribe to monthly newsletter</button>
+    </form>
        </div>
     </div>
     <!-- Box 2 -->
     <div class="image-content"></div>
+   </div>
+
+   <!-- SUSCRIBE MODAL -->
+   <div class="suscribe hidden">
+    <div class="container-txt">
+        <div class="title-icon-box">
+            <img class='icon-img' src="/assets/images/icon-list.svg" alt="check icon"> 
+            <h2 class="secondary-header">Thanks for subscribing!</h2>       
+          </div>
+          <p class="suscribe-text">A confirmation email has been sent to <span class="email-direction">hello@loremcompany.com</span>. Please open it and click the button inside to confirm your subscription.</p>
+          <button class="btn-dimiss" type="submit" href="">Dimiss message</button>
+      </div>
    </div>
   </div>
   <!--  -->

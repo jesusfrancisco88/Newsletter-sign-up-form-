@@ -26,7 +26,7 @@ body {
   
   background-color:  hsl(234, 29%, 20%);
 }
-/* /////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/*******************************/
 .container {
   display: flex;
 
@@ -42,18 +42,8 @@ body {
   width: 80%;
 }
 
-.image-content {
-  background-image: url('/assets/images/illustration-sign-up-desktop.svg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  border-radius: 2rem;
-
-  /* order: 2; */
-}
-
 .grid {
   display: grid;
-
 }
 
 .grid-2-cols {
@@ -61,8 +51,9 @@ body {
   gap: 2rem;
 }
 
-
-/* CONTENT */
+/*******************************/
+/******** CONTENT *************/
+/*****************************/
 .text-content {
   font-family: 'Roboto-Regular';
   padding: 3rem 2rem;
@@ -80,9 +71,23 @@ body {
   margin-bottom: 3rem;
   line-height: 1.5;
 }
-/* CONTENT */
 
-/* Attributes */
+.image-content {
+  background-image: url('/assets/images/illustration-sign-up-desktop.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 2rem;
+  /* order: 2; */
+}
+/*******************************/
+/*/////////////////////////// */
+/*****************************/
+
+
+
+/*******************************/
+/******** ATTRIBUTES (UL) *****/
+/*****************************/
 .list {
   list-style: none;
   
@@ -103,15 +108,17 @@ body {
   font-size: 1.7rem;
   color: hsl(236, 16%, 17%);
 }
-/* Attributes */
+/*******************************/
+/*/////////////////////////// */
+/*****************************/
 
-/* MONTHLY-NEWSLETTER */
+
+
+/*******************************/
+/** BUTTON MONTHLY-NEWSLETTER */
+/*****************************/
 .input-email {
   display: block;
-  width: 100%;
-}
-
-.btn-submit {
   width: 100%;
 }
 
@@ -147,11 +154,105 @@ body {
   background-color:  hsl(234, 29%, 20%);
   color: white;
 
+  width: 100%;
   transition: all 0.3s;
 }
-
 
 .btn-submit:hover {
   background-color: hsl(4, 100%, 67%);
 }
 
+.input-email:hover {
+  outline: none;
+}
+
+/*****************/
+/** VALIDATION **/
+.input-email:required {
+  border: 2px solid green;
+  color: green;
+  background-color: violet;
+}
+
+.input-email:valid {
+  border: 2px solid green;
+  color: green;
+
+  background-color: #ddffdd;
+}
+
+.input-email:invalid {
+  border: 1px solid rgba(217, 28, 28, 0.496);
+  color: rgba(255, 0, 0, 0.832);
+
+  background-color: #ffdddd;
+}
+/*****************/
+
+
+/*******************************/
+/*/////////////////////////// */
+/*****************************/
+
+
+/********************************/
+/*** THANKS - SUSCRIBE MODAL ***/
+/******************************/
+.hidden {
+  display: none;
+}
+
+.icon-img {
+  height: 5rem;
+}
+
+.suscribe {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 2rem;
+  width: 45%;
+}
+
+.container-txt {
+  padding: 2rem 3rem;
+}
+
+.secondary-header {
+  font-size: 4.5rem;
+  margin-bottom: 2rem;
+  font-family: 'Roboto-Bold';
+  color:hsl(234, 29%, 20%);
+}
+
+.suscribe-text {
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin-bottom: 2.5rem;
+  font-family: 'Roboto-Regular';
+  color:hsl(234, 29%, 20%);
+}
+
+.email-direction {
+  font-family: 'Roboto-Bold';
+}
+
+.btn-dimiss {
+  padding: 2rem 1rem;
+  border-radius: 1rem;
+  font-size: 1.6rem;
+  cursor: pointer;
+  font-family: 'Roboto-Bold';
+  background-color:  hsl(234, 29%, 20%);
+  color: white;
+
+  transition: all 0.3s;
+  width: 100%;
+}
+
+.btn-dimiss:hover {
+  background-color: hsl(4, 100%, 67%);
+}
+
+/*******************************/
+/*/////////////////////////// */
+/*****************************/
