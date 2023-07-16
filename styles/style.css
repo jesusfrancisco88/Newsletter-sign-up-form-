@@ -1,0 +1,157 @@
+* {
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Roboto-Bold';
+  src: url('/assets/fonts/Roboto-Bold.ttf') ;
+}
+
+@font-face {
+  font-family: 'Roboto-Regular';
+  src: url('/assets/fonts/Roboto-Regular.ttf') ;
+}
+
+html {
+  font-size: 62.5%;;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  
+  background-color:  hsl(234, 29%, 20%);
+}
+/* /////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+.container {
+  display: flex;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 2rem;
+  width: 80%;
+}
+
+.image-content {
+  background-image: url('/assets/images/illustration-sign-up-desktop.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 2rem;
+
+  /* order: 2; */
+}
+
+.grid {
+  display: grid;
+
+}
+
+.grid-2-cols {
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+
+/* CONTENT */
+.text-content {
+  font-family: 'Roboto-Regular';
+  padding: 3rem 2rem;
+  color: hsl(235, 18%, 26%);
+}
+
+.header-text {
+  font-size: 5.5rem;
+  font-family: 'Roboto-Bold';
+  color: hsl(235, 18%, 26%);
+}
+
+.description-text {
+  font-size: 1.8rem; 
+  margin-bottom: 3rem;
+  line-height: 1.5;
+}
+/* CONTENT */
+
+/* Attributes */
+.list {
+  list-style: none;
+  
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  margin-bottom: 2rem;
+}
+
+.attribute {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.text-attribute {
+  font-size: 1.7rem;
+  color: hsl(236, 16%, 17%);
+}
+/* Attributes */
+
+/* MONTHLY-NEWSLETTER */
+.input-email {
+  display: block;
+  width: 100%;
+}
+
+.btn-submit {
+  width: 100%;
+}
+
+.monthly-newsletter {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  margin-top: 3rem;
+}
+
+.label-email {
+  font-size: 1.5rem;
+  font-family: 'Roboto-Bold';
+}
+
+.input-email {
+  margin-top: 5px;
+  padding: 1.5rem 2rem;
+  border-radius: 1rem;
+  border: 1px solid hsl(231, 7%, 60%);
+
+  font-family: inherit;
+  font-size: 1.6rem;
+}
+
+.btn-submit {
+  padding: 2rem 1rem;
+  border-radius: 1rem;
+  font-size: 1.6rem;
+  cursor: pointer;
+  font-family: 'Roboto-Bold';
+  background-color:  hsl(234, 29%, 20%);
+  color: white;
+
+  transition: all 0.3s;
+}
+
+
+.btn-submit:hover {
+  background-color: hsl(4, 100%, 67%);
+}
+
